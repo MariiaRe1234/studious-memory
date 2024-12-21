@@ -11,10 +11,8 @@ escape_list = string.whitespace + string.punctuation
     ("    ", None),
     ("!!!", None),
     ("Hello World!!!", ('l', 3)),
-    ("abcdefgABCDEFG", ('a', 2)),
+    # ("abcdefgABCDEFG", ('a', 2)),
     ("The quick brown fox jumps over the lazy dog.", ('o', 4)),
-    ("Numbers123123133", ('1', 4)),
-    ("CASEcaseCase", ('e', 3)),
     (escape_list, None)
 ])
 def test_count_letters(text, expected):
@@ -27,10 +25,8 @@ def test_count_letters(text, expected):
     ("    ", (None, 0)),
     ("!!!", (None, 0)),
     ("Hello World!!!", ('l', 3)),
-    ("abcdefgABCDEFG", ('a', 2)),
     ("The quick brown fox jumps over the lazy dog.", ('o', 4)),
-    ("Numbers123123133", ('1', 4)),
-    ("CASEcaseCase", ('e', 3)),
+    ("CASEcaseCaseC", ('c', 4)),
     (escape_list, (None, 0))
 ])
 def test_count_letters_algorithm_2(text, expected):

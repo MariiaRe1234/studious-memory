@@ -1,2 +1,18 @@
-*__pycache__
 tasks/utils/cars.json
+*.swp
+package-lock.json
+__pycache__
+.pytest_cache
+.env
+*venv
+.venv
+.idea
+*.egg-info
+lambda_layer
+.coverage
+.tox/
+target/
+*_test.py
+
+# Cloud9 development artifacts
+.~c9_invoke_*

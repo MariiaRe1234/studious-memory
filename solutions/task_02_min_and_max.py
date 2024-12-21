@@ -17,7 +17,7 @@ def converted(numbers):
     for i in numbers:
         try:
             res.append(int(i))
-        except (ValueError, TypeError):
+        except (ValueError, TypeError, OverflowError):
             continue
     return res
 

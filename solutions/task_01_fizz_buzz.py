@@ -11,11 +11,11 @@ Ref: tasks/01_fizz_buzz.md
 def fizz_buzz():
     for i in range(1, 101):
         if i % 3 == 0 and i % 5 == 0:
-            print('fizz_buzz')
+            print('FizzBuzz')
         elif i % 3 == 0:
-            print('fizz')
+            print('Fizz')
         elif i % 5 == 0:
-            print('buzz')
+            print('Buzz')
         else:
             print(i)
 

@@ -39,7 +39,10 @@ def count_letters(text):
             res[i] += 1
         else:
             res[i] = 1
-    return sorted(res.items(), key=lambda pair: pair[1])[-1]
+    n = sorted(res.items(), key=lambda pair: pair[1])
+    if len(n) == 0:
+        return None
+    return n[-1]
 
 
 def count_letters_algorithm_2(text):

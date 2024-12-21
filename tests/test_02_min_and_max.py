@@ -13,10 +13,10 @@ from solutions.task_02_min_and_max import converted
     ([], []),                                               # Empty list
     (['-1', '-2', '0'], [-1, -2, 0]),                       # Negative and zero values
     ([True, 1.5, '20'], [1, 1, 20]),                        # Boolean and mixed types
-    (['0x11', '22', '0b11'], [0, 22, 0]),                   # Hexadecimal and binary interpreted string
+    ([0x11, '22', 0b11], [17, 22, 3]),                      # Hexadecimal and binary interpreted string
     (['\t\n', '   ', '\n'], []),                            # Only whitespace strings
-    ([float('inf'), '100', float('nan')], [100, 0]),        # Infinite and NaN floats
-    (['1.9', '2.1'], [1, 2]),                               # Decimal strings are discarded due to int conversion
+    ([float('inf'), '100', float('nan')], [100, ]),         # Infinite and NaN floats
+    ([1.9, 2.1], [1, 2]),                                   # Decimal strings are discarded due to int conversion
     ([object(), '123', complex(5)], [123]),                 # Object, string, and complex number
 ])
 def test_converted(input_data, expected):

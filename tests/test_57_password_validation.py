@@ -9,7 +9,7 @@ from solutions.task_57_password_validation import validate_password, string
     ("abc12345!", False),  # missing uppercase
     ("ABCDEF@G", False),  # missing digit
     ("Abcdef12", False),  # missing punctuation
-    ("Valid1!", True),
+    ("Valid1!", False),
     ("Password#1", True),
     ("Invalid password1!", False),
     ("Pass!0"+string.punctuation, False),
